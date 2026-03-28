@@ -1,3 +1,7 @@
+import subprocess, sys
+subprocess.check_call([sys.executable, "-m", "pip", "install", 
+    "anthropic", "feedparser", "requests", "schedule"])
+
 import os, anthropic, feedparser, requests, schedule, time, logging
 from datetime import datetime
 
